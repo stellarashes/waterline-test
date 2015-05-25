@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/stellarashes/waterline-test",
   "dependencies": {
+    "async-q": "^0.2.2",
     "chai": "^2.3.0",
     "mocha": "^2.2.5",
     "q": "^1.4.1",
+    "sails-mysql": "^0.10.12",
     "waterline": "^0.10.22"
   }
 }

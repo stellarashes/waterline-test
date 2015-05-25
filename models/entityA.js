@@ -14,13 +14,13 @@ module.exports = Waterline.Collection.extend({
 	attributes: {
 		id: {
 			type: "integer",
-			required: true,
 			autoIncrement: true,
 			primaryKey: true
 		},
 		B: {
 			model: "B",
-			columnName: "b_id"
+			columnName: "b_id",
+			required: true
 		}
 	}
 });

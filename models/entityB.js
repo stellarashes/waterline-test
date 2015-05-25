@@ -14,7 +14,6 @@ module.exports = Waterline.Collection.extend({
 	attributes: {
 		id: {
 			type: "integer",
-			required: true,
 			autoIncrement: true,
 			primaryKey: true
 		}
