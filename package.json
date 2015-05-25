@@ -1,0 +1,25 @@
+{
+  "name": "waterline-test",
+  "version": "1.0.0",
+  "description": "Cross-database tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stellarashes/waterline-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stellarashes/waterline-test/issues"
+  },
+  "homepage": "https://github.com/stellarashes/waterline-test",
+  "dependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5",
+    "q": "^1.4.1",
+    "waterline": "^0.10.22"
+  }
+}
