@@ -9,7 +9,7 @@ var async = require('async-q');
 var util = require("util");
 
 
-describe("Cross-database populate should work", function () {
+describe("Cross-database association/population", function () {
 	it("should be able to set up data", function (done) {
 		waterline.then(function (models) {
 			var A = models.collections.a;
@@ -33,6 +33,19 @@ describe("Cross-database populate should work", function () {
 
 			async.series(tasks)
 				.catch(console.error);
+		});
+	});
+
+	it("should be able to populate B", function (done) {
+		waterline.then(function (models) {
+			var A = models.collections.a;
+			var B = models.collections.b;
+
+			A.find().limit(1).populate('B').then(function (foundA) {
+				expect(foundA).to.not.be.empty;
+				expect(foundA[0].B).to.not.be.empty;
+				done();
+			})
 		});
 	});
 
